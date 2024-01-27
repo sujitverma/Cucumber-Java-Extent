@@ -45,11 +45,7 @@ public class BaseWeb {
             System.setProperty("webdriver.gecko.driver", "src/test/resources/geckodriver");
             return;
         }
-        if (osName.contains("windows")) {
-            System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
-            System.setProperty("ebdriver.gecko.driver", "src/test/resources/geckodriver.exe");
-            return;
-        }
+        
         if (osName.contains("nux")) {
             System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver");
             System.setProperty("webdriver.gecko.driver", "src/test/resources/geckodriverlinux");
